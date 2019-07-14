@@ -1,0 +1,36 @@
+<!--pages/detail/detail.wxml-->
+<!-- <view class="container" wx:for="{{items}}" wx:key="{{index}}" data-id="{{item.id}}">
+    <view class="text-center">{{item.date}}</view>
+    <view class="article-list-title">{{item.number}}</view>
+    <view class="article-list-img">
+      <image src="{{item.articleImg}}" alt="" />
+    </view>
+    <view class="article-list-author">{{item.author}}</view>
+    <view class="article-list-desc">{{item.description}}</view>
+    <view class="article-list-time">{{item.title}}</view>
+</view> -->
+
+<view class="container">
+  <view class="picsImg" wx:for="{{items}}" wx:key="{{index}}">
+    <view class="one-img">
+      <image src="{{item.articleImg}}" alt="" />
+    </view>
+    <view class="content">
+      <view class="upper">
+        <text class="pull-left">{{item.number}}</text>
+        <text class="pull-right">{{item.author}}</text>
+      </view>
+      <view class="middle">
+        <view class="one-day ">{{item.oneday}}</view>
+        <view class="one-date ">{{item.onedate}}</view>
+      </view>
+      <view class="line"></view>
+      <view class="text-desc">{{item.description}}</view>
+      <view class="text-title">{{item.title}}</view>
+    </view>
+  </view>
+  <view class="article-footer">
+        <text class="last">上一篇</text>
+        <text class="next">下一篇</text>
+    </view>
+</view>

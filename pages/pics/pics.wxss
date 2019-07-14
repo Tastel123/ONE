@@ -1,0 +1,28 @@
+.container {
+  color: #58666e;
+  background-color: #fff;
+  padding: .5rem;
+  border-bottom: 2px solid #E0E0E0;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.article-list-title {
+  text-align: center;
+  font-size: .725rem; 
+  margin: .25rem 0;
+}
+
+.article-list-author, .article-list-time {
+  text-align: center;
+  font-size: .725rem; 
+  margin: .5rem 0;
+}
+.article-list-desc {
+  font-size: .875rem;
+  text-align: center;
+}
+

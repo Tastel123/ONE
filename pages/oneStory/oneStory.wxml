@@ -1,0 +1,25 @@
+<!--pages/oneStory/oneStory.wxml-->
+<view class="story">
+  <view class="header text-center">   
+    <text class="inline header-title">{{title}}</text>
+  </view>
+  <view class="container no-padder">
+    <view class="padder">
+        <view class="article-title">{{story.title}}</view>
+        <view class="article-author">{{story.author}}</view>
+        <view class="artical-content">
+            <view class="fr-pspace-a0">{{story.beginning}}</view>
+            <view class="fr-pspace-a0">{{story.luokuan}}</view>
+            <view class="fr-pspace-a0">
+                <br/>
+            </view>
+            <view class="fr-pspace-a0">1.</view>
+            <view class="fr-pspace-a0 content">{{story.content}}</view>
+        </view>
+    </view>
+    <view class="article-footer">
+        <text class="last">上一篇</text>
+        <text class="next">下一篇</text>
+    </view>
+  </view>
+</view>

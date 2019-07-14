@@ -1,0 +1,29 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine">
+    <view class="header">
+        <open-data type="userAvatarUrl" class="thumb"></open-data>
+        <open-data type="userNickName" lang="zh_CN" class="nickname"></open-data> 
+    </view>
+    <!-- <view class="weui-cells">
+            <navigator class="weui-cell weui-cell_access" url="javascript:;">
+                <view class="weui-cell__bd">
+                    <text>我的阅读</text>
+                </view>
+                <view class="weui-cell__ft">
+                </view>
+            </navigator>
+            <navigator class="weui-cell weui-cell_access" url="javascript:;">
+                <view class="weui-cell__bd">
+                    <text>我的书单</text>
+                </view>
+                <view class="weui-cell__ft">
+                </view>
+            </navigator>
+        </view> -->
+        <view class="weui-footer weui-footer_fixed-bottom">
+            <view class="weui-footer__links">
+                <view class="weui-footer__link" bindtap="toAbout">关于「 ONE • 一个 」</view>
+            </view>
+            <view class="weui-footer__text">Copyright © 2016-2019 zhuzai.io</view>
+        </view>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/pics/pics.wxml-->
+  <view  class="container" wx:for="{{pics}}" wx:key="{{index}}" bindtap="toDetail">
+      <view class="text-center">{{item.date}}</view>
+      <view class="article-list-title">{{item.number}}</view>
+      <view class="article-list-img">
+        <image src="{{item.articleImg}}" alt="" />
+      </view>
+      <view class="article-list-author">{{item.author}}</view>
+      <view class="article-list-desc">{{item.description}}</view>
+      <view class="article-list-time">{{item.title}}</view>
+  </view>

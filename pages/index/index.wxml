@@ -1,0 +1,31 @@
+<!-- pages/index/index.wxml -->
+<view class='root'>
+  <view class="header"> {{title}}</view>
+
+  <!-- 主页 -->
+  <view class="container no-padder">
+    <view>
+      <text class="home-img">
+        <image mode="aspectFill" src="{{coverImg}}" alt=""></image>
+      </text>
+      <view class="home-mask" >
+        <view class="home-content" bindtap="toPics">
+          <view class="padder">{{item.date}}</view>
+          <view class="padder m-b-sm home-content-title">{{item.order}}</view>
+          <view class="padder m-b-lg home-content-title">{{item.content}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- one story -->
+    <view  class="m-t-xs bg-white wrapper block" bindtap="oneStory">
+      <text class="text-center">{{item.text}}</text>
+      <text class="article-list-title">{{item.title}}</text>
+      <view class="article-list-author">{{item.author}}</view>
+      <view class="article-list-img">
+        <image src="{{item.articleImg}}" alt="" />
+      </view>
+      <text class="m-b-sm">{{item.article}}</text>
+      <text class="article-list-time">{{item.listtime}}</text>
+    </view>
+  </view>
+</view>

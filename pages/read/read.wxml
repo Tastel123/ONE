@@ -1,0 +1,21 @@
+<!--pages/read/read.wxml-->
+<view class="read">
+  <view class="header"> {{title}}</view>
+  <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image class="slide-image" src="{{item}}"/>
+        </swiper-item>
+      </block>
+  </swiper>
+  <view  class="container" bindtap="readDetail"   wx:for="{{item}}" wx:key="{{index}}">
+      <view class="text-center">{{item.text}}</view>
+      <text class="article-list-title">{{item.title}}</text>
+      <view class="article-list-author">{{item.author}}</view>
+      <view class="article-list-img">
+        <image src="{{item.storyImg}}" alt="" />
+      </view>
+      <text class="article-desc">{{item.desc}}</text>
+      <text class="article-list-time">{{item.listtime}}</text>
+  </view>
+</view>

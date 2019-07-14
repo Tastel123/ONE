@@ -1,0 +1,23 @@
+/* pages/mine/mine.wxss */
+.header{
+    position: relative;
+    height: 160rpx;
+    line-height: 100rpx;
+    padding:30rpx 30rpx 30rpx 150rpx;
+    /* padding: 30rpx auto; */
+    box-sizing: border-box;
+    font-size: 28rpx;
+    border-top: 8px solid #F3F3F3;
+    border-bottom: 8px solid #F3F3F3;
+}
+.header .thumb{
+    position: absolute;
+    left: 15rpx;
+    top: 18rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.weui-cells {
+  margin-top: 0;
+}
